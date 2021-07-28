@@ -1,9 +1,13 @@
-### Esse repositório tem por finalidade:
+## Course FIC - Java Objects Oriented (POO Java in general) 
 
-- [ ] 1: Hospeda Exercicíos Java
+### This repository is intended for:
 
-- [ ] 2: Hospedar possíveis Projetos
+- [ ] 1: Host Java Exercises
 
-- [ ] 3: Abrigar material Java disponibilizado no Curso FIC
+- [ ] 2: Host Possible Projects
 
-### Contribuir um pouco mais para com a comunidade do Java
+- [ ] 3: Host Java material made available in the FIC Course
+
+### Contribute a little more to the Java community
+
+### Link to the Site where I'm taking a Java course: https://www.w3schools.com/java/default.asp
