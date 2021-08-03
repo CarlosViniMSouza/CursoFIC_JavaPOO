@@ -1,5 +1,7 @@
 package Lista2;
 
+import java.util.Scanner;
+
 public class Cap3Q12 {
 
     public static void main(String []args) {
@@ -23,20 +25,20 @@ public class Cap3Q12 {
 
         public class Account {
 
-            //construtor:
+            // construtor:
             public Account( double initialBalance ) {
                 //valida a condicao de initialBalance --> Deve ser maior que 0:
                 if ( initialBalance > 0.0 )
                     balance = initialBalance;
             }
 
-            //adiciona uma certa quantia na Account:
+            // adiciona uma certa quantia na Account:
             public void credit ( double amount ) {
 
                 balance = balance + amount;
             }
 
-            //retorna o saldo da Account:
+            // retorna o saldo da Account:
             public double getBalance() {
 
                 return balance; // fornece o valor dp saldo.
@@ -46,6 +48,58 @@ public class Cap3Q12 {
         }
 
          */
+
+        class Account {
+
+            private double balance;
+
+            public Account( double initialBalance ) {
+                //valida a condicao de initialBalance, que deve ser maior que 0:
+                if ( initialBalance > 0.0 ) {
+                    balance = initialBalance;
+                }
+            }
+
+            /*
+            public void credit ( double amount ) {
+
+                balance = balance + amount;
+            }
+            */
+
+            // retira uma certa quantia na Account:
+            public void debit() {
+
+                double due;
+
+                Scanner input = new Scanner( System.in );
+                System.out.print("Insira a divida: ");
+                due = input.nextDouble();
+
+                if ( balance < due ) {
+                    System.out.println("Quantia de debito excedeu o saldo da conta");
+                } else {
+                    System.out.println("Seu saldo esta OK !");
+                    balance = balance - due;
+                }
+            }
+
+            // retorna o saldo da Account:
+            public double getBalance() {
+
+                return balance;
+            }
+            // A classe account com um construtor para validar e inicializar a variável de
+            // instancia 'balance' do tipo 'double'.
+        }
+
+        Account myAccount = new Account(500);
+
+        System.out.println("Seu saldo eh = " + myAccount.getBalance());
+
+        myAccount.debit();
+
+        System.out.println("Seu saldo agora eh = " + myAccount.getBalance());
 
     }
 }
