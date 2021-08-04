@@ -2,7 +2,7 @@ package Lista2;
 
 import java.util.Scanner;
 
-public class Cap3Q12 {
+public class Cap3Q12_Part1 {
 
     public static void main(String []args) {
 
@@ -14,38 +14,6 @@ public class Cap3Q12 {
         amount exceeded account balance" [Quantia de debito excedeu o saldo da conta].
 
         Modifique a classe AccountTest (Figura 3.14) para testar o metodo debito.
-
-         */
-
-        /*
-
-        // Figura 3.13: Account.java
-        // classe Account com um construtor para validar e
-        // inicializa a variavel de instancia balance do tipo double.
-
-        public class Account {
-
-            // construtor:
-            public Account( double initialBalance ) {
-                //valida a condicao de initialBalance --> Deve ser maior que 0:
-                if ( initialBalance > 0.0 )
-                    balance = initialBalance;
-            }
-
-            // adiciona uma certa quantia na Account:
-            public void credit ( double amount ) {
-
-                balance = balance + amount;
-            }
-
-            // retorna o saldo da Account:
-            public double getBalance() {
-
-                return balance; // fornece o valor dp saldo.
-            }
-            // A classe account com um construtor para validar e inicializar a variável de
-            // instancia 'balance' do tipo 'double'.
-        }
 
          */
 
@@ -68,13 +36,7 @@ public class Cap3Q12 {
             */
 
             // retira uma certa quantia na Account:
-            public void debit() {
-
-                double due;
-
-                Scanner input = new Scanner( System.in );
-                System.out.print("Insira a divida: ");
-                due = input.nextDouble();
+            public void debit( double due ) {
 
                 if ( balance < due ) {
                     System.out.println("Quantia de debito excedeu o saldo da conta");
@@ -97,7 +59,7 @@ public class Cap3Q12 {
 
         System.out.println("Seu saldo eh = " + myAccount.getBalance());
 
-        myAccount.debit();
+        myAccount.debit(550);
 
         System.out.println("Seu saldo agora eh = " + myAccount.getBalance());
 
