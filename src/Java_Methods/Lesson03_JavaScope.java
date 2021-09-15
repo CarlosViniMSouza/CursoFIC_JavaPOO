@@ -1,6 +1,6 @@
 package Java_Methods;
 
-public class Lesson03_Scope {
+public class Lesson03_JavaScope {
 
     /*
     --> Block Scope

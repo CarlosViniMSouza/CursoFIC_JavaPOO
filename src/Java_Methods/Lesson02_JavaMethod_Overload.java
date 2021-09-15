@@ -1,6 +1,6 @@
 package Java_Methods;
 
-public class Lesson02_Method_Overl {
+public class Lesson02_JavaMethod_Overload {
 
     /*
     --> Method Overloading

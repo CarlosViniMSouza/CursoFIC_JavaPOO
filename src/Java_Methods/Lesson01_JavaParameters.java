@@ -1,6 +1,6 @@
 package Java_Methods;
 
-public class Lesson01_Parameters {
+public class Lesson01_JavaParameters {
 
     /*
         --> Parameters and Arguments:

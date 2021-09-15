@@ -1,6 +1,6 @@
 package Java_Methods;
 
-public class Lesson04_Recursion {
+public class Lesson04_JavaRecursion {
 
     /*
     --> Java Recursion:
